@@ -225,10 +225,24 @@ int main() {
     signalData[0].cycleDuration = 60;  // Signal 0 has a cycle duration of 60 seconds
     signalData[0].trafficVolume = 3;   // Signal 0 has a traffic volume index of 3 (example)
 
-    signalData[1].cycleDuration = 45;  // Signal 1 has a cycle duration of 45 seconds
-    signalData[1].trafficVolume = 5;   // Signal 1 has a traffic volume index of 5 (example)
+    signalData[1].cycleDuration = 45;  
+    signalData[1].trafficVolume = 5; 
+    
+    signalData[2].cycleDuration = 38;  
+    signalData[2].trafficVolume = 12;
 
-    // Add data for other signals...
+    signalData[3].cycleDuration = 23;  
+    signalData[3].trafficVolume = 2;
+
+    signalData[4].cycleDuration = 27;  
+    signalData[4].trafficVolume = 7;
+    
+    signalData[5].cycleDuration = 53;  
+    signalData[5].trafficVolume = 9;
+    
+    signalData[6].cycleDuration = 17;  
+    signalData[6].trafficVolume = 6;
+    
 
     int waitTime = estimateSignalWaitTime(userSignalID, signalData);
 
